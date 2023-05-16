@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import {ProfileCard, StatsWrap, StatsItem, UserName} from './Profile.styled'
-import styled from 'styled-components';
 
 export const Profile = ({ userName, tag, location, avatar, stats }) => {
     return <ProfileCard>
