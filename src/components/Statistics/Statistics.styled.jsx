@@ -23,18 +23,7 @@ export const StatsList = styled.ul`
 export const StatsItem = styled.li`
     display: flex;
     flex-direction: column;
-    background-color: ${getRandomHexColor()} ;
+    background-color: ${props => props.color} ;
     gap: 8px;
 `
 
-function getRandomHexColor() {
-  let hexChars = "0123456789ABCDEF";
-  let color = "#";
-  
-  for (let i = 0; i < 6; i++) {
-    let randomIndex = Math.floor(Math.random() * hexChars.length);
-    color += hexChars[randomIndex];
-  }
-  
-  return color;
-}
